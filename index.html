@@ -6,6 +6,8 @@
         <title>HTML Academy: Техномарт</title>
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header class="main-header">
@@ -15,15 +17,17 @@
                     <form action="#" method="get" class="search">
                         <input type="search" class="search-field" placeholder="Поиск:">
                     </form>
-                    <a href="#" class="header-top-a bookmarks">Закладки: 0</a>
-                    <a href="#" class="header-top-a cart">Корзина: 0</a>
-                    <a href="#" class="order">Оформить заказ</a>
+                    <a href="#" class="header-btn bookmarks">Закладки: 0</a>
+                    <a href="#" class="header-btn cart">Корзина: 0</a>
+                    <a href="#" class="header-btn order">Оформить заказ</a>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="wrapper clearfix">
                     <div class="text">
-                        Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
+                        Интернет-магазин<br>
+                        строительных материалов<br>
+                        и инструментов для ремонта
                     </div>
                     <div class="header-contacts">
                         <div class="phone">+7 (812) 555-05-55</div>
@@ -61,9 +65,9 @@
                 </div>
             </div>
         </header>
-        <main class="main-content">
+        <main class="index-content">
             <div class="wrapper clearfix">
-                <div class="main-category">
+                <div class="main-category clearfix">
                     <div class="category category-yellow category-materials new">
                         <h2 class="category-title">Материалы</h3>
                         <a href="#" class="category-btn">На любой вкус</a>
@@ -76,6 +80,16 @@
                         <h2 class="category-title">Техника</h3>
                         <a href="#" class="category-btn">Для стройки</a>
                     </div>
+                    <div class="slider">
+                        <img src="img/slider-image1.jpg" alt="slider-image1.jpg" width="620" height="266">
+                        <div class="slider-top">
+                            <h1 class="slider-title">Перфораторы</h1>
+                            <div class="slider-text">Настоящие мужские игрушки</div>
+                        </div>
+                        <button class="slider-btn left">Назад</button>
+                        <button class="slider-btn right">Вперед</button>
+                        <a href="" class="main-btn btn-show-catalog">Открыть каталог</a>
+                    </div>
                     <div class="category category-green category-discount">
                         <h2 class="category-title">Скидка 50%</h3>
                         <a href="#" class="category-btn">На 350 товаров</a>
@@ -83,16 +97,6 @@
                     <div class="category category-yellow category-delivery">
                         <h2 class="category-title">Доставка</h3>
                         <a href="#" class="category-btn">Бесплатно</a>
-                    </div>
-                    <div class="slider">
-                        <img src="img/slider-image1.jpg" alt="slider-image1.jpg" width="620" height="266">
-                        <div class="slider-top">
-                            <h1 class="slider-title">Перфораторы</h1>
-                            <div class="slider-text">Настоящие мужские игрушки</div>
-                        </div>
-                        <button class="slider-btn left"></button>
-                        <button class="slider-btn right"></button>
-                        <a href="" class="main-btn">Открыть каталог</a>
                     </div>
                 </div>
                 <section class="content clearfix">
@@ -106,10 +110,10 @@
                             <a href="#" class="btn btn-bookmark">В закладки</a>
                         </div>
                         <div class="item-image">
-                            <img src="img/1.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+                            <img src="img/BOSCH-BFG-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 9000</div>
-                        <div class="item-price item-old-price">32500 р.</div>
+                        <div class="item-price old-price">32500 р.</div>
                         <div class="item-price">25500 р.</div>
                     </div>
                     <div class="item">
@@ -118,35 +122,35 @@
                             <a href="#" class="btn btn-bookmark">В закладки</a>
                         </div>
                         <div class="item-image">
-                            <img src="img/2.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+                            <img src="img/BOSCH-BFG-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 3000</div>
-                        <div class="item-price item-old-price">22500 р.</div>
+                        <div class="item-price old-price">22500 р.</div>
                         <div class="item-price">15500 р.</div>
                     </div>
                     <div class="item">
                         <div class="actions">
-                            <a href="#" class="btn btn-buy">Купить</a>
+                            <a href="#" class="btn btn-buy cart">Купить</a>
                             <a href="#" class="btn btn-bookmark">В закладки</a>
                         </div>
                         <div class="item-image">
-                            <img src="img/3.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+                            <img src="img/BOSCH-BFG-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 6000</div>
-                        <div class="item-price item-old-price">30500 р.</div>
+                        <div class="item-price old-price">30500 р.</div>
                         <div class="item-price">25500 р.</div>
                     </div>
                     <div class="item">
-                        <div class="flag flag-new">Новинка</div>
+                        <div class="flag new"></div>
                         <div class="actions">
                             <a href="#" class="btn btn-buy">Купить</a>
                             <a href="#" class="btn btn-bookmark">В закладки</a>
                         </div>
                         <div class="item-image">
-                            <img src="img/4.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+                            <img src="img/BOSCH-BFG-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 2000</div>
-                        <div class="item-price item-old-price">32500 р.</div>
+                        <div class="item-price old-price">32500 р.</div>
                         <div class="item-price">25500 р.</div>
                     </div>
                 </section>
@@ -159,7 +163,6 @@
                         <li>
                             <a class="manufacturers-logo" href="#">
                                 <img src="img/bosch.png" alt="bosch" width="126" height="37">
-                                <img src="img/makita.png" alt="makita" width="123" height="40">
                             </a>    
                         </li>
                         <li>
@@ -201,7 +204,7 @@
                 </section>
             </div>
         </main>
-        <section class="section-services">
+        <section class="section-services clearfix">
             <div class="wrapper clearfix">
                 <h2 class="section-title">Сервисы</h2>
                 <p class="section-text">
