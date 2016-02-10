@@ -342,6 +342,19 @@ body {
                             font-family: "Cuprum";
 	                          text-decoration: none;
                             padding: 19px 30px;
+<<<<<<< HEAD
+=======
+                        }
+
+                        .main-menu a:hover {
+                            color: rgba(255,255,255,1);
+                            background-color: #293449;   
+                        }
+
+                        .main-menu a:active {
+                            color: rgba(255,255,255,0.5);
+                            background-color: #1d2739;   
+>>>>>>> origin/master
                         }
 
                         .main-menu a:hover {
@@ -420,6 +433,7 @@ body {
 
         .category-delivery {
             background: #f6b22d url("../img/category-delivery.png") no-repeat 191px 32px;
+<<<<<<< HEAD
         }
 
         .new {
@@ -435,7 +449,23 @@ body {
             right: -1px;
             background: url("../img/icons/30.png") no-repeat;
             z-index: 100;
+=======
+>>>>>>> origin/master
         }
+
+.new {
+    position: relative;
+}
+
+.new::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 59px;
+    top: 0;
+    right: 0;
+    background: url("../img/icons/30.png") no-repeat;
+}
 
             .category-title {
                 font-size: 24px;
@@ -462,6 +492,7 @@ body {
                 background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 3px;
                 text-align: center;
+<<<<<<< HEAD
             }
 
             .category-btn:hover {
@@ -470,7 +501,17 @@ body {
 
             .category-btn:active {
                 background-color: rgba(0, 0, 0, 0.3);
+=======
+>>>>>>> origin/master
             }
+
+.category-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
         .slider {
             position: relative;
@@ -636,6 +677,7 @@ body {
             margin: 0;
         }
 
+<<<<<<< HEAD
         .range-controls {
             height: 80px;
             margin-bottom: 9px;
@@ -709,6 +751,75 @@ body {
         .filter-list input[type=radio]:checked + label::before {
             background-color: #c1c1c1;
         }
+=======
+	.filter-group {
+		margin-bottom: 25px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+		.filter-group-title {
+			font-size: 17px;
+			line-height: 30px;
+			color: #000;
+			font-weight: bold;
+			font-family: "PT Sans";
+		}
+
+		.filter-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-size: 0;
+		}
+
+			.filter-list li {
+				list-style-type: none;
+			}
+
+		.filter-list label {
+			font-size: 15px;
+			line-height: 20px;
+			color: #000;
+			font-weight: normal;
+			font-family: "PT Sans";
+			text-transform: uppercase;
+		}
+
+	.sort-controls {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		float: left; 
+	}
+
+		.sort-controls li {
+			list-style-type: none;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+	.sort-btn {
+		display: block;
+		font-size: 13px;
+		line-height: 18px;
+		color: #000;
+		font-weight: normal;
+		font-family: "PT Sans";
+		text-transform: uppercase;
+		text-decoration: underline;
+		text-decoration-style: dotted;
+		text-decoration-color: #ee3643; 
+		opacity: 0.3;
+		float: left; 
+	}
+
+	.sort-btn-active {
+		color: #ee3643;
+		text-decoration: none;
+		opacity: 1;
+	}
+>>>>>>> origin/master
 
         .catalog {
             width: 700px;
@@ -754,9 +865,13 @@ body {
         .item {
             display: inline-block;
             vertical-align: top;
+<<<<<<< HEAD
             float: left;
             width: 220px;
             min-height: 316px;
+=======
+            width: 218px;
+>>>>>>> origin/master
             border: 1px solid #e5e5e5;
             margin-right: 20px;
             text-align: center;
@@ -766,6 +881,10 @@ body {
 
         .item:last-child {
             margin-right: 0;
+<<<<<<< HEAD
+=======
+            float: left;  
+>>>>>>> origin/master
         }
 
         .catalog .item:nth-child(3n+4) {
@@ -855,11 +974,17 @@ body {
             .item-title {
                 font-size: 18px;
                 line-height: 20px;
+<<<<<<< HEAD
                 color: #000;                
                 font-family: "PT Sans";
                 font-weight: bold;
                 margin-top: 10px;
                 padding: 0 20px;
+=======
+                color: #000;
+                font-weight: bold;
+                font-family: "PT Sans";
+>>>>>>> origin/master
             }
 
             .item-price {
@@ -939,9 +1064,15 @@ body {
                 border-radius: 3px;
             }
 
+<<<<<<< HEAD
             .paginator .next-page {
                 width: 138px;
             }
+=======
+                .paginator .next-page {
+                    width: 138px;
+                }
+>>>>>>> origin/master
 
             .manufacturers {
                 list-style: none;
@@ -1383,6 +1514,7 @@ body {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
+<<<<<<< HEAD
 }
 
 .sprite-01 {
@@ -1469,6 +1601,94 @@ body {
     background-position: -2px -254px;
 }
 
+=======
+}
+
+.sprite-01 {
+    width: 17px;
+    height: 17px;
+    background-position: -2px -2px;
+}
+
+.sprite-02 {
+    width: 17px;
+    height: 17px;
+    background-position: -2px -23px;
+}
+
+.sprite-03 {
+    width: 14px;
+    height: 16px;
+    background-position: -2px -44px;
+}
+
+.sprite-04 {
+    width: 17px;
+    height: 16px;
+    background-position: -2px -64px;
+}
+
+.sprite-05 {
+    width: 20px;
+    height: 17px;
+    background-position: -2px -84px;
+}
+
+.sprite-06 {
+    width: 20px;
+    height: 17px;
+    background-position: -2px -105px;
+}
+
+.sprite-07 {
+    width: 20px;
+    height: 18px;
+    background-position: -2px -126px;
+}
+
+.sprite-08 {
+    width: 20px;
+    height: 18px;
+    background-position: -2px -148px;
+}
+
+.sprite-09 {
+    width: 21px;
+    height: 17px;
+    background-position: -2px -170px;
+}
+
+.sprite-10 {
+    width: 21px;
+    height: 17px;
+    background-position: -2px -191px;
+}
+
+.sprite-11 {
+    width: 11px;
+    height: 10px;
+    background-position: -2px -212px;
+}
+
+.sprite-12 {
+    width: 11px;
+    height: 10px;
+    background-position: -2px -226px;
+}
+
+.sprite-13 {
+    width: 11px;
+    height: 10px;
+    background-position: -2px -240px;
+}
+
+.sprite-14 {
+    width: 9px;
+    height: 9px;
+    background-position: -2px -254px;
+}
+
+>>>>>>> origin/master
 .sprite-15 {
     width: 11px;
     height: 10px;
