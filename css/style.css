@@ -5,6 +5,7 @@ body {
 }
 
 body {
+    position: relative;
     font-size: 13px;
     line-height: 18px;
     color: #000;
@@ -23,8 +24,7 @@ body {
         .wrapper {
             width: 940px;
             margin: 0 auto;
-            padding: 0 10px;
-            outline: 1px dashed blue;    
+            padding: 0 10px;   
         }
         
         .clearfix::after {
@@ -261,9 +261,12 @@ body {
             .user-block {
                 float: right;
                 margin-top: 4px;
+                font-weight: normal;
+                font-family: "Cuprum";  
             }
 
-                .user-block a {
+                .enter,
+                .registration {
                     display: block;
                     float: left;
                     font-size: 21px;
@@ -312,6 +315,100 @@ body {
                     background-position: -2px -191px;
                 }
 
+                .user-name-field {
+                    position: relative;
+                    width: 299px;
+                    height: 45px;
+                    margin-bottom: 5px;
+                    background-color: #fff;
+                }
+
+                .user-name-field::before {
+                    position: absolute;
+                    content: "";
+                    width: 20px;
+                    height: 18px;
+                    top: 13px;
+                    left: 13px;
+                    background: url("../img/sprite.png") no-repeat -2px -148px;
+                    opacity: 0.3;
+                }
+
+                .user-block .user-name {
+                    display: block; 
+                    width: 205px;
+                    margin: 0 47px;
+                    font-size: 21px;
+                    line-height: 45px;
+                    color: #000;
+                    overflow: hidden;                 
+                    white-space: nowrap;
+                }
+
+
+                .user-block .user-exit {
+                    position: absolute;
+                    display: block;
+                    font-size: 0;
+                    top: 14px;
+                    right: 10px;
+                    width: 21px;
+                    height: 17px;
+                    background: url("../img/sprite.png") no-repeat -2px -105px;
+                    opacity: 0.3;
+                }
+
+                .user-name-field:hover::before,
+                .user-block .user-exit:hover {
+                    opacity: 1;
+                }
+
+                .user-name-field:active::before,
+                .user-block .user-exit:active,
+                .user-block .user-name:active {
+                    opacity: 0.3;
+                }
+
+                .user-block .user-orders,
+                .user-block .user-account {
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #32425c;
+                    background: none;
+                    text-decoration: underline;
+                }
+
+                .user-block .user-orders {
+                    position: relative;
+                    margin-left: 17px;
+                    padding-right: 19px;
+                }
+
+                .user-block .user-account {
+                    margin-left: 13px;
+                }
+
+                .user-block .user-orders::after {
+                    position: absolute;
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    top: 8px;
+                    right: 0;
+                    background-color: #32425c;
+                    border-radius: 50%;
+                }
+
+                .user-block .user-orders:hover,
+                .user-block .user-account:hover {
+                    color: #ee3643;
+                }
+
+                .user-block .user-orders:active,
+                .user-block .user-account:active {
+                   color: rgba(50,66,92,0.3);
+                }
+
             .main-menu {
                 border-bottom: 5px solid #293449;
                 clear: both;
@@ -342,19 +439,6 @@ body {
                             font-family: "Cuprum";
 	                          text-decoration: none;
                             padding: 19px 30px;
-<<<<<<< HEAD
-=======
-                        }
-
-                        .main-menu a:hover {
-                            color: rgba(255,255,255,1);
-                            background-color: #293449;   
-                        }
-
-                        .main-menu a:active {
-                            color: rgba(255,255,255,0.5);
-                            background-color: #1d2739;   
->>>>>>> origin/master
                         }
 
                         .main-menu a:hover {
@@ -374,25 +458,54 @@ body {
     .breadcrumbs {
         list-style: none;
         padding: 0;
+        padding: 22px 0;
         margin: 0;
         font-size: 0;
-        outline: 1px solid red;
     }
 
         .breadcrumbs li {
+            position: relative;
+            display: inline-block;
             list-style-type: none;
+            padding-right: 40px;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: normal;
+            font-family: "PT Sans";
+            float: left;
         }
 
             .breadcrumbs a {
                 display: block;
-                font-size: 13px;
-                line-height: 18px;
-                color: #000;
-                font-weight: normal;
-                font-family: "PT Sans";
                 text-decoration: none;
+                color: #000;
                 float: left;
-                padding: 22px 0;
+            }
+
+            .breadcrumbs a::after {
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 12px;
+                top: 3px;
+                right: 15px;
+                background: url("../img/sprite.png") no-repeat -2px -657px;
+            }
+
+            .breadcrumbs a:hover {
+                text-decoration: underline;
+            }
+
+            .breadcrumbs .home {
+                font-size: 0;
+                width: 15px;
+                height: 12px;
+                margin-top: 2px;
+                background: url("../img/sprite.png") no-repeat -2px -643px;
+            }
+
+            .breadcrumbs .current {
+                color: #000;
             }
 
         .category {
@@ -433,7 +546,6 @@ body {
 
         .category-delivery {
             background: #f6b22d url("../img/category-delivery.png") no-repeat 191px 32px;
-<<<<<<< HEAD
         }
 
         .new {
@@ -447,25 +559,9 @@ body {
             height: 59px;
             top: -1px;
             right: -1px;
-            background: url("../img/icons/30.png") no-repeat;
+            background: url("../img/flag-new.png") no-repeat;
             z-index: 100;
-=======
->>>>>>> origin/master
         }
-
-.new {
-    position: relative;
-}
-
-.new::after {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 59px;
-    top: 0;
-    right: 0;
-    background: url("../img/icons/30.png") no-repeat;
-}
 
             .category-title {
                 font-size: 24px;
@@ -492,7 +588,6 @@ body {
                 background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 3px;
                 text-align: center;
-<<<<<<< HEAD
             }
 
             .category-btn:hover {
@@ -501,17 +596,7 @@ body {
 
             .category-btn:active {
                 background-color: rgba(0, 0, 0, 0.3);
-=======
->>>>>>> origin/master
             }
-
-.category-btn:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.category-btn:active {
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
         .slider {
             position: relative;
@@ -571,12 +656,17 @@ body {
 
             .main-btn {
                 display: block;
-                padding: 10px 50px;
+                padding: 10px 0;
                 color: #fff;
                 background-color: #ee3643;
                 text-decoration: none;
                 text-transform: uppercase;
                 border-radius: 3px;
+                text-align: center;
+            }
+
+            .slider .main-btn {
+                width: 195px;
             }
 
             .main-btn:hover {
@@ -594,7 +684,6 @@ body {
             }
 
     .content {
-        outline: 1px solid green;
         margin-bottom: 21px;
     }
 
@@ -636,14 +725,14 @@ body {
                 text-transform: uppercase;
             }
 
-            .content-header a {
+            .content-header .main-btn {
+                width: 243px;
                 float: right;
             }
 
         .range-filter {
             width: 220px;
             float: left;
-            outline: 1px dashed blue; 
         }
         
         .content-column-title {            
@@ -664,8 +753,11 @@ body {
         }
 
     .filter-group {
-        margin-bottom: 25px;
         border-bottom: 1px solid #e5e5e5;
+    }
+
+    .power-supply {
+        border-bottom: none;
     }
 
         .filter-group-title {            
@@ -675,17 +767,83 @@ body {
             color: #000;
             font-weight: bold;
             margin: 0;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
 
-<<<<<<< HEAD
         .range-controls {
             height: 80px;
             margin-bottom: 9px;
+            background-color: #f7f3ec;
+            border-radius: 3px;
+            position: relative;
+            margin-bottom: 15px;
+            padding: 0 30px;
+            overflow: hidden;
         }
 
-.price-controls {
-    height: 38px;
-}
+        .scale{
+            margin-top: 39px;
+            height: 2px;
+            background: #d7dcde;
+        }
+
+        .bar {
+            height: 2px;
+            background: #00ca74;
+        }
+
+        .toggle {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 4px;
+            height: 4px;
+            border: 8px solid white;
+            background: #ababab;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .min-toggle {
+            left: 70px;
+        }
+
+        .max-toggle {
+            left: 165px;
+        }
+
+        .price-controls {
+            margin-bottom: 25px;
+        }
+
+        .price-controls input[type="text"] {
+            display: block;
+            float: left;
+            padding: 0;
+            width: 95px;
+            height: 38px;
+            border: none;
+            background-color: #f7f3ec;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .price-controls span {
+            width: 30px;
+            display: block;
+            float: left;
+            padding: 10px 0;
+            font-family: "PT Sans";
+            font-size: 16px;
+            line-height: 18px;
+            color: #444444;
+            text-align: center;
+        }
+
+        .price-controls input[type="text"]:last-child {
+            float: right;
+        }
 
         .filter-list {
             list-style: none;
@@ -696,135 +854,77 @@ body {
 
             .filter-list li {
                 list-style-type: none;
+                padding: 0;
+                margin: 0;
             }
 
-.filter-list input[type=checkbox],
-.filter-list input[type=radio] {
-    display: none;
-}
+            .filter-list li:last-child {
+                margin-bottom: 23px;
+            }
 
-        .filter-list label {
-            position: relative;
-            padding-left: 35px;
-            font-size: 15px;
-            line-height: 20px;
-            color: #000;
-            font-weight: normal;
-            font-family: "PT Sans";
-            text-transform: uppercase;
-        }
+            .filter-list input[type=checkbox],
+            .filter-list input[type=radio] {
+                display: none;
+            }
 
-        .filter-list input[type="radio"] + label {
-            font-size: 14px;
-        }
+            .filter-list label {
+                display: block;
+                position: relative;
+                padding-left: 35px;                
+                margin-bottom: 20px;
+                font-size: 15px;
+                line-height: 20px;
+                color: #000;
+                font-weight: normal;
+                font-family: "PT Sans";
+                text-transform: uppercase;
+            }
 
-        .filter-list input[type=checkbox] + label::before {
-            position: absolute;
-            display: block;
-            content: "";
-            width: 27px;
-            height: 23px;
-            top: 0;
-            left: 0;
-            background-color: black;
-            background: url("../img/sprite.png") no-repeat -2px -411px;
-        }
+            .filter-list input[type="radio"] + label {
+                font-size: 14px;
+            }
 
-        .filter-list input[type=checkbox]:checked + label::before {
-            background-position: -2px -465px;
-        }
+            .filter-list input[type=checkbox] + label::before {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 27px;
+                height: 23px;
+                top: 0;
+                left: 0;
+                background-color: black;
+                background: url("../img/sprite.png") no-repeat -2px -411px;
+            }
 
-        .filter-list input[type=radio] + label::before {
-            position: absolute;
-            display: block;
-            content: "";
-            width: 9px;
-            height: 9px;
-            top: 2px;
-            left: 2px;
-            background-color: #fff;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 0 0 3px #c1c1c1;
-        }
+            .filter-list input[type=checkbox]:checked + label::before {
+                background-position: -2px -465px;
+            }
 
-        .filter-list input[type=radio]:checked + label::before {
-            background-color: #c1c1c1;
-        }
-=======
-	.filter-group {
-		margin-bottom: 25px;
-		border-bottom: 1px solid #e5e5e5;
-	}
+            .filter-list input[type=radio] + label::before {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 9px;
+                height: 9px;
+                top: 2px;
+                left: 3px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 4px solid #fff;
+                box-shadow: 0 0 0 3px #c1c1c1;
+            }
 
-		.filter-group-title {
-			font-size: 17px;
-			line-height: 30px;
-			color: #000;
-			font-weight: bold;
-			font-family: "PT Sans";
-		}
+            .filter-list input[type=radio]:checked + label::before {
+                background-color: #c1c1c1;
+            }
 
-		.filter-list {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			font-size: 0;
-		}
-
-			.filter-list li {
-				list-style-type: none;
-			}
-
-		.filter-list label {
-			font-size: 15px;
-			line-height: 20px;
-			color: #000;
-			font-weight: normal;
-			font-family: "PT Sans";
-			text-transform: uppercase;
-		}
-
-	.sort-controls {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		font-size: 0;
-		float: left; 
-	}
-
-		.sort-controls li {
-			list-style-type: none;
-			display: inline-block;
-			vertical-align: top;
-		}
-
-	.sort-btn {
-		display: block;
-		font-size: 13px;
-		line-height: 18px;
-		color: #000;
-		font-weight: normal;
-		font-family: "PT Sans";
-		text-transform: uppercase;
-		text-decoration: underline;
-		text-decoration-style: dotted;
-		text-decoration-color: #ee3643; 
-		opacity: 0.3;
-		float: left; 
-	}
-
-	.sort-btn-active {
-		color: #ee3643;
-		text-decoration: none;
-		opacity: 1;
-	}
->>>>>>> origin/master
+            .range-filter button[type="button"] {
+                margin-top: 79px;
+            }
 
         .catalog {
             width: 700px;
             float: right;
-            outline: 1px dashed blue;
         }
 
             .sort-controls {
@@ -865,14 +965,13 @@ body {
         .item {
             display: inline-block;
             vertical-align: top;
-<<<<<<< HEAD
             float: left;
             width: 220px;
             min-height: 316px;
-=======
-            width: 218px;
->>>>>>> origin/master
             border: 1px solid #e5e5e5;
+            font-size: 0;
+            margin: 0;
+            padding: 0;
             margin-right: 20px;
             text-align: center;
             box-sizing: border-box;
@@ -881,10 +980,6 @@ body {
 
         .item:last-child {
             margin-right: 0;
-<<<<<<< HEAD
-=======
-            float: left;  
->>>>>>> origin/master
         }
 
         .catalog .item:nth-child(3n+4) {
@@ -974,17 +1069,11 @@ body {
             .item-title {
                 font-size: 18px;
                 line-height: 20px;
-<<<<<<< HEAD
                 color: #000;                
                 font-family: "PT Sans";
                 font-weight: bold;
                 margin-top: 10px;
                 padding: 0 20px;
-=======
-                color: #000;
-                font-weight: bold;
-                font-family: "PT Sans";
->>>>>>> origin/master
             }
 
             .item-price {
@@ -1035,7 +1124,8 @@ body {
                 border-radius: 3px;
             }
 
-            .paginator-btn {
+            .paginator-btn,
+            .range-filter button[type="button"] {
                 display: block;
                 width: 36px;
                 padding: 9px 0;
@@ -1047,11 +1137,13 @@ body {
                 border-radius: 3px;                
             }
 
-            .paginator-btn:hover {
+            .paginator-btn:hover,
+            .range-filter button[type="button"]:hover{
                 border-color: #c1c6ce;
             }
 
-            .paginator-btn:active {
+            .paginator-btn:active,
+            .range-filter button[type="button"]:active {
                 border-color: #ee3643;
             }
 
@@ -1064,15 +1156,10 @@ body {
                 border-radius: 3px;
             }
 
-<<<<<<< HEAD
-            .paginator .next-page {
+            .paginator .next-page,
+            .range-filter button[type="button"] {
                 width: 138px;
             }
-=======
-                .paginator .next-page {
-                    width: 138px;
-                }
->>>>>>> origin/master
 
             .manufacturers {
                 list-style: none;
@@ -1083,8 +1170,13 @@ body {
 
                 .manufacturers li {
                     list-style-type: none;
-                    float: left;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0;
                     margin-right: 20px;
+                    padding: 0;
+                    font-size: 0;
+                    float: left;
                 }
 
                 .manufacturers li:nth-child(-n+4) {
@@ -1119,11 +1211,14 @@ body {
                             margin: 0 auto;
                         }
 
-.section-services {
-    padding-top: 68px;
-    padding-bottom: 102px;
+.section-services,
+.catalog-information {
+    padding-top: 67px;
     background-color: #f2f6f8;
-    outline: 1px solid green;
+}
+
+.catalog-information {
+    padding-bottom: 67px;
 }
     
         .section-title {
@@ -1134,6 +1229,7 @@ body {
             font-family: "Cuprum";
             text-transform: uppercase;
             margin: 0;
+            margin-bottom: 31px;
         }
 
         .section-text {
@@ -1142,12 +1238,22 @@ body {
             color: #000;
             font-weight: normal;
             font-family: "PT Sans";
-            outline: 1px solid pink;
+            margin: 0;
         }
 
         .section-services .section-text {
             width: 400px;
         }
+
+        .section-services p {
+            margin: 0;
+        }
+
+        .tabs {
+            padding-top: 68px;
+            min-height: 284px;            
+            background: url(../img/delivery.png) no-repeat right bottom;
+        }        
 
         .services-list {
             float: left;
@@ -1166,8 +1272,8 @@ body {
                 }
 
                     .services-list a {
-                        width: 223px;
                         display: block;
+                        width: 223px;
                         font-size: 21px;
                         line-height: 30px;
                         color: #fff;
@@ -1194,12 +1300,12 @@ body {
                     }
 
         .services-content {
-            width: 300px;
+            width: 275px;
             float: left;
         }
 
             .delivery {
-
+                width: 277px;
             }
 
                 .services-content-title {
@@ -1208,6 +1314,12 @@ body {
                     color: #32425c;
                     font-weight: normal;
                     font-family: "Cuprum";
+                    margin: 0;
+                }
+
+                .services-content .section-text {
+                    margin: 25px 0;
+                    width: auto;
                 }
 
             .guarantee,
@@ -1223,13 +1335,17 @@ body {
         .about {
             width: 540px;
             float: left;
-            outline: 2px solid black;
         }
+
+            .section-information .section-text {
+                margin-bottom: 24px;
+            }
 
             .section-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
+                margin-bottom: 30px;
             }
 
                 .section-list li {
@@ -1241,6 +1357,7 @@ body {
                     font-family: "Cuprum";
                     list-style-type: none;
                     padding-left: 36px;
+                    margin-bottom: 20px;
                 }
 
                 .section-list li::before {
@@ -1254,11 +1371,20 @@ body {
                     background-color: #fb565a;
                 }
 
+.about .main-btn {
+    width: 220px;
+}
+
         .contacts {
             width: 300px;
             float: right;
-            outline: 2px solid black;
         }
+
+.contacts img {
+    width: 300px;
+    height: 158px;
+    margin-bottom: 40px;
+}
 
 .main-footer {
     
@@ -1472,16 +1598,169 @@ body {
                 text-align: center;
             }
 
-.sprite-26 {
-    width: 10px;
-    height: 18px;
-    
+
+.write-us,
+.added-to-card {
+    position: fixed;
+    width: 620px;
+    top: 100px;
+    left: 50%;
+    margin-left: -310px;
+    border-top: 7px solid #ee3643;
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
+    z-index: 200;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000;
+    font-weight: normal;
+    font-family: "PT Sans";
 }
 
-.sprite-27 {
-    width: 17px;
-    height: 17px;
-    
+
+    .write-us p {
+        position: relative;
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000;
+        font-weight: normal;
+        font-family: "Cuprum";
+        clear: both;
+    }
+
+    .pop-up-close {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        top: 9px;
+        right: 9px;
+        font-size: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: none;
+    }
+
+    .pop-up-close::before,
+    .pop-up-close::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 5px;
+        top: 8px;
+        right: -2px;        
+        background-color: #ee3643;
+        border-radius: 1px;
+    }
+
+    .pop-up-close::before {
+        transform: rotate(45deg);
+    }
+
+    .pop-up-close::after {
+        transform: rotate(-45deg);
+    }
+
+        .pop-up-wrapper {
+            margin: 37px 80px;
+        }
+
+    .write-us-column-left {
+        float: left;
+
+    }
+
+    .write-us-column-right {
+        float: right;
+    }
+
+    .write-us input[type="text"] {
+        display: block;
+        width: 188px;
+        padding: 8px 14px;
+        margin-bottom: 20px;
+        border: 2px solid #d7dcde;
+        border-radius: 3px;
+    }
+
+    textarea {
+        min-width: 428px;
+        max-width: 428px;
+        min-height: 94px;
+        padding: 8px 14px;
+        border: 2px solid #d7dcde;    
+        border-radius: 3px;
+    }
+
+    .btn-field {        
+        padding: 37px 0;
+        background-color: #f1f1f1;
+    }
+
+    .pop-up .main-btn {
+        margin: 0 auto;
+        width: 460px;
+        border: none;
+        font-family: "Cuprum";
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+.added-to-card p {    
+    float: left;
+    font-size: 30px;
+    line-height: 18px;
+    padding: 0;
+    margin-top: 23px;
+}
+
+.added-to-card-icon {
+    position: relative;
+    float: left;
+    margin-right: 33px;
+    width: 64px;
+    height: 64px;
+    background-color: #63a63e;
+    border-radius: 50%;
+}
+
+.added-to-card-icon::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 8px;    
+    top: 30px;
+    left: 21px;    
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+
+.added-to-card-icon::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 8px;       
+    top: 35px;
+    left: 13px;
+    border-radius: 1px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+.added-to-card .btn-field {
+    text-align: center;
+}
+.added-to-card .main-btn {
+    display: inline-block;
+    width: 220px;
+    margin-right: 17px;
+}
+
+.added-to-card .main-btn:last-child {    
+    margin-right: 0;
 }
 /*
 .header-top a, 
@@ -1489,32 +1768,12 @@ body {
 
 
 
-.user-name {
-	font-size: 21px;
-  line-height: 18px;
-  color: #000;
-  font-weight: normal;
-  font-family: "Cuprum";
-}
-.user-exit {
-	
-}
-.user-block .user-orders,
-.user-block .user-account {
-	font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-  font-weight: normal;
-  font-family: "Cuprum";
-	background: none;
-	text-decoration: underline;
-}
+
 
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-<<<<<<< HEAD
 }
 
 .sprite-01 {
@@ -1601,94 +1860,6 @@ body {
     background-position: -2px -254px;
 }
 
-=======
-}
-
-.sprite-01 {
-    width: 17px;
-    height: 17px;
-    background-position: -2px -2px;
-}
-
-.sprite-02 {
-    width: 17px;
-    height: 17px;
-    background-position: -2px -23px;
-}
-
-.sprite-03 {
-    width: 14px;
-    height: 16px;
-    background-position: -2px -44px;
-}
-
-.sprite-04 {
-    width: 17px;
-    height: 16px;
-    background-position: -2px -64px;
-}
-
-.sprite-05 {
-    width: 20px;
-    height: 17px;
-    background-position: -2px -84px;
-}
-
-.sprite-06 {
-    width: 20px;
-    height: 17px;
-    background-position: -2px -105px;
-}
-
-.sprite-07 {
-    width: 20px;
-    height: 18px;
-    background-position: -2px -126px;
-}
-
-.sprite-08 {
-    width: 20px;
-    height: 18px;
-    background-position: -2px -148px;
-}
-
-.sprite-09 {
-    width: 21px;
-    height: 17px;
-    background-position: -2px -170px;
-}
-
-.sprite-10 {
-    width: 21px;
-    height: 17px;
-    background-position: -2px -191px;
-}
-
-.sprite-11 {
-    width: 11px;
-    height: 10px;
-    background-position: -2px -212px;
-}
-
-.sprite-12 {
-    width: 11px;
-    height: 10px;
-    background-position: -2px -226px;
-}
-
-.sprite-13 {
-    width: 11px;
-    height: 10px;
-    background-position: -2px -240px;
-}
-
-.sprite-14 {
-    width: 9px;
-    height: 9px;
-    background-position: -2px -254px;
-}
-
->>>>>>> origin/master
 .sprite-15 {
     width: 11px;
     height: 10px;

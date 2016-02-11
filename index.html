@@ -159,7 +159,7 @@
                         <h2 class="content-title">Популярные производители:</h2>
                         <a href="#" class="main-btn">Все популярные производители</a>
                     </div>
-                    <ul class="manufacturers">
+                    <ul class="manufacturers clearfix">
                         <li>
                             <a class="manufacturers-logo" href="#">
                                 <img src="img/bosch.png" alt="bosch" width="126" height="37">
@@ -210,38 +210,42 @@
                 <p class="section-text">
                     Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
-                <div class="services-list">
-                    <ul>
-                        <li>
-                            <a href="#" class="services-list-a-active">Доставка</a>
-                        </li>
-                        <li>
-                            <a href="#">Гарантия</a>
-                        </li>
-                        <li>
-                            <a href="#">Кредит</a>
-                        </li>
-                    </ul>	
-                </div>
-                <div class="services-content">
-                    <div class="delivery">
-                        <h3 class="services-content-title">Доставка</h3>
-                        <p class="section-text">
-                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
-                        </p>
+                <div class="tabs clearfix">
+                    <div class="services-list">
+                        <ul>
+                            <li>
+                                <a href="#" class="services-list-a-active">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Гарантия</a>
+                            </li>
+                            <li>
+                                <a href="#">Кредит</a>
+                            </li>
+                        </ul>	
                     </div>
-                    <div class="guarantee">
-                        <h3 class="services-content-title">Гарантия</h3>
-                        <p class="section-text">
-                            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                        </p>
-                    </div>
-                    <div class="credit">
-                        <h3 class="services-content-title">Кредит</h3>
-                        <p class="section-text">
-                            Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                        </p>
-                    </div>	
+                    <div class="services-content">
+                        <div class="delivery">
+                            <h3 class="services-content-title">Доставка</h3>
+                            <p class="section-text">
+                                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                                <br>Ведь мы неплохо заработаем,
+                                <br>поднимая его на ваш на этаж!
+                            </p>
+                        </div>
+                        <div class="guarantee">
+                            <h3 class="services-content-title">Гарантия</h3>
+                            <p class="section-text">
+                                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                            </p>
+                        </div>
+                        <div class="credit">
+                            <h3 class="services-content-title">Кредит</h3>
+                            <p class="section-text">
+                                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                            </p>
+                        </div>	
+                    </div> 
                 </div>
             </div>
         </section>
@@ -253,7 +257,8 @@
                         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
                     </p>
                     <p class="section-text">
-                        Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+                        Мы можем доставить ваш товар в самые отдаленные точки России!
+                        <br>Техномарт работает со многими транспортными компаниями:
                     </p>
                     <ul class="section-list">
                         <li>Деловые линии</li>
@@ -265,7 +270,8 @@
                 <div class="contacts">
                     <h2 class="section-title">Контакты</h2>
                     <p  class="section-text">
-                        Вы можете забрать товар сами, заехав в наш офис:
+                        Вы можете забрать товар сами,
+                        <br>заехав в наш офис:
                     </p>
                     <img src="img/mini-map.jpg" alt="Компания «ТЕХНОМАРТ»" width="300" height="158">
                     <a href="#" class="main-btn">Заблудились? Напишите нам</a>
@@ -336,6 +342,26 @@
                     </div>
                 </div>   
             </div>
-        </footer>
+        </footer>        
+        <div class="pop-up write-us">
+            <button class="pop-up-close" type="button">Закрыть</button>
+            <form action="" method="post">
+                <div class="pop-up-wrapper">
+                    <div class="write-us-column-left">
+                        <p>Ваше имя:</p>
+                        <input type="text" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="write-us-column-right">
+                        <p>Ваш e-mail:</p>
+                        <input type="text" placeholder="Для отправки ответа">
+                    </div>
+                    <p>Текст письма:</p>
+                    <textarea name="" form="идентификатор" placeholder="В свободной форме"></textarea>
+                </div>   
+                <div class="btn-field">
+                    <input class="main-btn" type="submit" value="Отправить">
+                </div>
+            </form> 
+        </div>
     </body>
 </html>
