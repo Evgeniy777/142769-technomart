@@ -371,19 +371,18 @@
         </footer>
         <div class="pop-up added-to-card">
             <button class="pop-up-close" type="button">Закрыть</button>
-                <div class="pop-up-wrapper clearfix">      
-                    <div class="added-to-card-icon"></div>             
-                    <p>Товар добавлен в корзину!</p>
-                </div>   
-                <div class="btn-field">
-                    <button class="main-btn" type="button" value="Отправить">Оформить заказ</button>
-                    <button class="main-btn" type="button" value="Отправить">продолжить покупки</button>
-                </div>
-            </form> 
+            <div class="pop-up-wrapper clearfix">      
+                <div class="added-to-card-icon"></div>             
+                <p>Товар добавлен в корзину!</p>
+            </div>   
+            <div class="btn-field">
+                <button class="main-btn" type="button" value="Отправить">Оформить заказ</button>
+                <button class="main-btn" type="button" value="Отправить">продолжить покупки</button>
+            </div>
         </div>        
         <div class="pop-up modal-write-us">
             <button class="pop-up-close" type="button">Закрыть</button>
-            <form action="https://www.google.ru/" method="post">
+            <form action="https://www.google.ru/" method="post" name="message">
                 <div class="pop-up-wrapper">
                     <div class="write-us-column-left">
                         <p>Ваше имя:</p>
@@ -394,7 +393,7 @@
                         <input type="text" placeholder="Для отправки ответа">
                     </div>
                     <p>Текст письма:</p>
-                    <textarea name="text" form="идентификатор" placeholder="В свободной форме"></textarea>
+                    <textarea name="text" form="message" placeholder="В свободной форме"></textarea>
                 </div>   
                 <div class="btn-field">
                     <input class="main-btn" type="submit" value="Отправить">
