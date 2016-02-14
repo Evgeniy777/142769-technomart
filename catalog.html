@@ -13,7 +13,7 @@
         <header class="catalog-header">
             <div class="header-top">
                 <div class="wrapper clearfix">
-                    <a class="header-logo" href="/">Техномарт</a>
+                    <a class="main-logo header-logo" href="/">Техномарт</a>
                     <form action="#" method="get" class="search">
                         <input type="search" class="search-field" placeholder="Поиск:">
                     </form>
@@ -125,7 +125,7 @@
                                 <label for="manufacturer-4">Dewalt</label>
                             </li>
                             <li>
-                                <input id="manufacturer-5" type="checkbox" value="Dewalt">
+                                <input id="manufacturer-5" type="checkbox" value="Dewalt" disabled>
                                 <label for="manufacturer-5">Hitachi</label>
                             </li>
                         </ul>
@@ -159,10 +159,10 @@
                                 <a href="#" class="sort-btn">По функционалу</a>
                             </li>
                             <li>
-                                <a href="#" class="sort-btn sort-min sort-btn-active">min</a>
+                                <a href="#" class="sort-arrow sort-min sort-arrow-active">min</a>
                             </li>
                             <li>
-                                <a href="#" class="sort-btn sort-max">max</a>
+                                <a href="#" class="sort-arrow sort-max">max</a>
                             </li>				
                         </ul>
                         
@@ -201,6 +201,7 @@
                             <img src="img/BOSCH-BFG-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 2000</div>
+                        <div class="item-price old-price"></div>
                         <div class="item-price">12500 р.</div>
                     </div>
                     <div class="item">
@@ -212,7 +213,7 @@
                             <img src="img/BOSCH-BFG-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 3000</div>
-                        <div class="item-price old-price">22500 р.</div>
+                        <div class="item-price old-price"></div>
                         <div class="item-price">15500 р.</div>
                     </div>
                     <div class="item">
@@ -237,6 +238,7 @@
                             <img src="img/BOSCH-BFG-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 2000</div>
+                        <div class="item-price old-price"></div>
                         <div class="item-price">12500 р.</div>
                     </div>
                     <div class="item">
@@ -273,6 +275,7 @@
                             <img src="img/BOSCH-BFG-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
                         </div>
                         <div class="item-title">Перфоратор BOSCH BFG 2000</div>
+                        <div class="item-price old-price"></div>
                         <div class="item-price">12500 р.</div>
                     </div>
                     <ul class="paginator">
@@ -304,7 +307,7 @@
             <div class="footer-top">
                 <div class="wrapper clearfix">
                     <div class="footer-top-leftCol">
-                        <div class="footer-logo">ТЕХНОМАРТ</div>
+                        <div class="main-logo footer-logo">Техномарт</div>
                          <div class="footer-address">
                              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
                         </div>
@@ -377,5 +380,20 @@
                 </div>
             </form> 
         </div>
+        <script>
+            var link = document.querySelector(".btn-buy");
+            var popup = document.querySelector(".added-to-card");
+            var close = document.querySelector(".pop-up-close");
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+                console.log("Товар добавлен в корзину");
+            });
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+                console.log("Закрыли модальное окно");
+            });
+        </script>
     </body>
 </html>
