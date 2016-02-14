@@ -10,7 +10,7 @@ body {
     line-height: 18px;
     color: #000;
     font-weight: normal;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .main-header {
@@ -43,11 +43,11 @@ body {
                 display: block;
                 width: 220px;                
                 font-weight: bold;
-                font-family: "Cuprum";
                 color: #fff;
                 background-color: #ee3643;
                 text-align: center;
                 text-transform: uppercase;
+                text-decoration: none;
             }
 
             .header-logo {
@@ -121,7 +121,6 @@ body {
                     line-height: 18px;
                     color: #fff;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     text-decoration: none;
                     background-color: #293449;
                     opacity: 1;
@@ -147,7 +146,6 @@ body {
                 width: 150px;
                 font-size: 17px;
                 line-height: 18px;
-                font-family: "Cuprum";
                 padding: 12px 0;
                 float: left;
             }
@@ -234,7 +232,6 @@ body {
                 line-height: 23px;
                 color: #ee3643;
                 font-weight: normal;
-                font-family: "Cuprum";
                 font-style: italic;
                 margin-left: 52px;
                 padding-bottom: 44px;
@@ -253,7 +250,6 @@ body {
                     line-height: 39px;
                     color: #e9292a;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     border: 3px solid #fff;
                 }
 
@@ -273,7 +269,6 @@ body {
                     line-height: 20px;
                     color: #32425c;
                     font-weight: normal;
-                    font-family: "Cuprum"; 
                     text-align: center;
                 }
 
@@ -281,7 +276,6 @@ body {
                 float: right;
                 margin-top: 4px;
                 font-weight: normal;
-                font-family: "Cuprum";  
             }
 
                 .enter,
@@ -292,7 +286,6 @@ body {
                     line-height: 45px;
                     color: #000;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     background-color: #fff;
                     text-decoration: none;
                 }
@@ -455,7 +448,6 @@ body {
                             line-height: 17px;
                             color: #fff;
                             font-weight: normal;
-                            font-family: "Cuprum";
 	                          text-decoration: none;
                             padding: 19px 31px;
                         }
@@ -490,7 +482,7 @@ body {
             font-size: 13px;
             line-height: 18px;
             font-weight: normal;
-            font-family: "PT Sans";
+            font-family: "PT Sans", Arial, sans-serif;
             float: left;
         }
 
@@ -582,12 +574,16 @@ body {
             z-index: 102;
         }
 
+.main-category .new::after {
+    top: 0;
+    right: 0;
+}
+
             .category-title {
                 font-size: 24px;
                 line-height: 30px;
                 color: #fff;
                 font-weight: bold;
-                font-family: "Cuprum";
                 margin: 0;
                 padding: 0;
                 margin-bottom: 14px;
@@ -601,7 +597,6 @@ body {
                 line-height: 18px;
                 color: #fff;
                 font-weight: normal;
-                font-family: "Cuprum";
                 text-decoration: none;
                 text-transform: uppercase;
                 background-color: rgba(0, 0, 0, 0.1);
@@ -659,26 +654,6 @@ body {
                 #btn-2:checked ~ .slider-controls label[for="btn-2"] {
                     background-color: #ee3643;
                 }
-/*
-                .slider-controls i {
-                    display: inline-block;
-                    vertical-align: top;
-                    width: 6px;
-                    height: 6px;
-                    border: 2px solid #fff;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    margin: 0 3px;
-                    font-size: 0;
-                    line-height: 0;
-                    padding: 0;
-                    cursor: pointer;
-                }
-
-                .slider-controls .slide-active {
-                    background-color: #ee3643;
-                }
-*/
 
             .slider-btn {
                 position: absolute;
@@ -748,7 +723,6 @@ body {
                         font-size: 36px;
                         line-height: 36px;
                         font-weight: bold;
-                        font-family: "Cuprum";
                         text-transform: uppercase;
                         color: #fff;
                         margin: 0;
@@ -759,7 +733,7 @@ body {
                         line-height: 24px;
                         color: #fff;
                         font-weight: normal;
-                        font-family: "PT Sans";
+                        font-family: "PT Sans", Arial, sans-serif;
                     }
 
                 .main-btn {
@@ -819,7 +793,6 @@ body {
                 margin: 0;
                 color: #32425c;
                 font-weight: normal;
-                font-family: "Cuprum";
                 text-transform: uppercase;
             }
 
@@ -829,7 +802,6 @@ body {
                 line-height: 30px;
                 color: #32425c;
                 font-weight: bold;
-                font-family: "Cuprum";
                 text-transform: uppercase;
             }
 
@@ -852,7 +824,7 @@ body {
         .content-column-title span {
             display: block;
             float: left;            
-            font-family: "PT Sans";
+            font-family: "PT Sans", Arial, sans-serif;
             font-size: 13px;
             line-height: 18px;
             margin: 0;
@@ -869,7 +841,7 @@ body {
     }
 
         .filter-group-title {            
-            font-family: "PT Sans";
+            font-family: "PT Sans", Arial, sans-serif;
             font-size: 17px;
             line-height: 30px;
             color: #000;
@@ -942,7 +914,7 @@ body {
             display: block;
             float: left;
             padding: 10px 0;
-            font-family: "PT Sans";
+            font-family: "PT Sans", Arial, sans-serif;
             font-size: 16px;
             line-height: 18px;
             color: #444444;
@@ -985,7 +957,7 @@ body {
                 line-height: 20px;
                 color: #000;
                 font-weight: normal;
-                font-family: "PT Sans";
+                font-family: "PT Sans", Arial, sans-serif;
                 text-transform: uppercase;
                 cursor: pointer;
             }
@@ -1093,7 +1065,7 @@ body {
                         line-height: 18px;
                         color: rgba(0,0,0,0.3);
                         font-weight: normal;
-                        font-family: "PT Sans";
+                        font-family: "PT Sans", Arial, sans-serif;
                         text-transform: uppercase;
                         text-decoration: underline;
                         text-decoration-style: dotted;
@@ -1202,7 +1174,6 @@ body {
                     font-size: 14px;
                     line-height: 32px;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     text-decoration: none;
                     text-transform: uppercase;
                     border: 3px solid #63a63e;
@@ -1280,7 +1251,7 @@ body {
                 font-size: 18px;
                 line-height: 20px;
                 color: #000;                
-                font-family: "PT Sans";
+                font-family: "PT Sans", Arial, sans-serif;
                 font-weight: bold;
                 padding: 0 25px;
                 text-align: center;
@@ -1295,7 +1266,7 @@ body {
                 line-height: 20px;
                 background-color: #ee3643;
                 font-weight: bold;
-                font-family: "PT Sans";
+                font-family: "PT Sans", Arial, sans-serif;
                 padding: 9px 0;
                 color: #fff;
                 text-transform: uppercase;
@@ -1352,7 +1323,8 @@ body {
                 font-size: 13px;
                 line-height: 18px;
                 font-weight: normal;
-                font-family: "PT Sans";
+                font-family: "PT Sans", Arial, sans-serif;
+                text-transform: uppercase;
                 text-align: center;
                 border-radius: 3px;
             }
@@ -1442,6 +1414,10 @@ body {
                             border: 1px solid #e7e7e7;
                         }
 
+                        .manufacturers-logo img:hover {
+                            border: 1px solid #fff;
+                        }
+
                         .manufacturers-logo img:active {
                             opacity: 0.3;
                             border: 1px solid #fff;
@@ -1462,10 +1438,17 @@ body {
             line-height: 24px;
             color: #000;
             font-weight: normal;
-            font-family: "Cuprum";
             text-transform: uppercase;
             margin: 0;
             margin-bottom: 31px;
+        }
+
+        .section-services p {
+            width: 400px;
+        }
+
+        .catalog-information p {
+            width: 100%; 
         }
 
         .section-text {
@@ -1473,12 +1456,8 @@ body {
             line-height: 24px;
             color: #000;
             font-weight: normal;
-            font-family: "PT Sans";
+            font-family: "PT Sans", Arial, sans-serif;
             margin: 0;
-        }
-
-        .section-text {
-            width: 400px;
         }
 
         .section-services p {
@@ -1522,7 +1501,6 @@ body {
                     line-height: 30px;
                     color: #fff;
                     font-weight: bold;
-                    font-family: "Cuprum";
                     background-color: #32425c;
                     border-top: 1px solid #405069;
                     border-bottom: 1px solid #293449;
@@ -1600,7 +1578,6 @@ body {
                     line-height: 24px;
                     color: #32425c;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     margin: 0;
                 }
 
@@ -1636,7 +1613,6 @@ body {
                     line-height: 20px;
                     color: #000;
                     font-weight: normal;
-                    font-family: "Cuprum";
                     list-style-type: none;
                     padding-left: 36px;
                     margin-bottom: 20px;
@@ -1693,7 +1669,6 @@ body {
                 line-height: 24px;
                 color: #f1f5f7;
                 font-weight: normal;
-                font-family: "Cuprum";
             }
 
         .footer-top-rightCol {
@@ -1729,7 +1704,6 @@ body {
                         line-height: 24px;
                         color: #f1f5f7;
                         font-weight: normal;
-                        font-family: "Cuprum";
                         text-decoration: none;
                     }
 
@@ -1770,7 +1744,6 @@ body {
                         line-height: 24px;
                         color: #ffd180;
                         font-weight: normal;
-                        font-family: "Cuprum";
                         text-decoration: none;
                     }
 
@@ -1787,7 +1760,6 @@ body {
             line-height: 18px;
             color: #fff;
             font-weight: normal;
-            font-family: "Cuprum";
             margin-right: 150px;
         }
 
@@ -1858,7 +1830,6 @@ body {
                 line-height: 18px;
                 color: #fff;
                 font-weight: normal;
-                font-family: "Cuprum";
                 margin-right: 49px;
             }
 
@@ -1868,7 +1839,6 @@ body {
                 line-height: 18px;
                 color: #fff;
                 font-weight: normal;
-                font-family: "Cuprum";
                 text-align: center;
             }
 
@@ -1889,7 +1859,7 @@ body {
     line-height: 18px;
     color: #000;
     font-weight: normal;
-    font-family: "PT Sans";
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 
@@ -1906,7 +1876,6 @@ body {
         line-height: 18px;
         color: #000;
         font-weight: normal;
-        font-family: "Cuprum";
         clear: both;
     }
 
@@ -1983,7 +1952,6 @@ body {
         margin: 0 auto;
         width: 460px;
         border: none;
-        font-family: "Cuprum";
         font-size: 14px;
         line-height: 18px;
     }
