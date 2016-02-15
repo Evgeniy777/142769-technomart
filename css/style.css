@@ -11,6 +11,7 @@ body {
     color: #000;
     font-weight: normal;
     font-family: "Cuprum", Arial, sans-serif;
+    min-width: 960px;
 }
 
 .main-header {
@@ -91,6 +92,8 @@ body {
                 width: 270px;
             }
 
+            /*
+            Удали старый лишний код
             .search::before {
                 position: absolute;
                 display: block;
@@ -111,7 +114,9 @@ body {
             .search:focus::before {
                 background: green url("../img/sprite.png") no-repeat -2px -23px;
             }
+            */
                 .search-field {
+                    background: url("../img/sprite.png") no-repeat 17px 12px;
                     width: 206px;
                     padding: 12px 0;
                     padding-left: 49px;
@@ -140,6 +145,29 @@ body {
                     color: #000;
                 }
 
+                /*.search-icon {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    top: 12px;
+                    left: 17px;
+                    background: url("../img/sprite.png") no-repeat -2px -2px;
+                    opacity: 0.3;
+                    z-index: 100;
+                }
+
+                .search-field:hover + .search-icon {
+                    opacity: 1;
+                }
+
+                .search-field:focus + .search-icon {
+                    background: url("../img/sprite.png") no-repeat -2px -23px;
+                    opacity: 1;
+                }*/
+
+            
             .header-btn {
                 position: relative;
                 display: block;
@@ -355,6 +383,7 @@ body {
                     color: #000;
                     overflow: hidden;                 
                     white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
 
 
@@ -477,20 +506,18 @@ body {
         .breadcrumbs li {
             position: relative;
             display: inline-block;
-            list-style-type: none;
+            vertical-align: top;
+            list-style: none;
             padding-right: 40px;
             font-size: 13px;
             line-height: 18px;
-            font-weight: normal;
             font-family: "PT Sans", Arial, sans-serif;
-            float: left;
         }
 
             .breadcrumbs a {
                 display: block;
                 text-decoration: none;
                 color: #000;
-                float: left;
             }
 
             .breadcrumbs a::after {
@@ -1120,21 +1147,25 @@ body {
     background: url("../img/sprite.png") no-repeat;
     background-position: -2px -213px;
 }
+        .items {
+            font-size: 0;
+        }
         .item {
             position: relative;
             display: inline-block;
             vertical-align: top;
-            float: left;
+            /*float: left;*/
             width: 220px;
             border: 1px solid #e5e5e5;
             font-size: 0;
             margin: 0;            
             margin-right: 20px;
+            margin-bottom: 20px;
             padding-bottom: 20px;
             box-sizing: border-box;
         }
 
-        .item:last-child {
+        .items .item:nth-child(4n) {
             margin-right: 0;
         }
 
@@ -1868,7 +1899,9 @@ body {
 }
 
 
+    .modal-write-us label,
     .modal-write-us p {
+        display: block;
         position: relative;
         margin: 0;
         padding-bottom: 10px;
@@ -1925,7 +1958,7 @@ body {
         float: right;
     }
 
-    .modal-write-us input[type="text"] {
+    .write-us-field  {
         display: block;
         width: 188px;
         padding: 8px 14px;
@@ -1941,6 +1974,7 @@ body {
         padding: 8px 14px;
         border: 2px solid #d7dcde;    
         border-radius: 3px;
+        resize: none;
     }
 
     .btn-field {        
