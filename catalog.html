@@ -380,20 +380,6 @@
                 <button class="main-btn" type="button">продолжить покупки</button>
             </div>
         </div>
-        <script>
-            var link = document.querySelector(".btn-buy");
-            var popup = document.querySelector(".added-to-card");
-            var close = document.querySelector(".pop-up-close");
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                popup.classList.add("modal-content-show");
-                console.log("Товар добавлен в корзину");
-            });
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                popup.classList.remove("modal-content-show");
-                console.log("Закрыли модальное окно");
-            });
-        </script>
+        <script src="js/script.js"></script>
     </body>
 </html>
