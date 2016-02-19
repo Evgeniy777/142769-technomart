@@ -1435,6 +1435,10 @@ body {
     background-color: #f2f6f8;
 }
 
+.section-services {
+    overflow: hidden;
+}
+
 .catalog-information {
     padding-bottom: 67px;
 }
