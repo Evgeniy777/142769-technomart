@@ -538,32 +538,92 @@ body {
             margin-right: 0;
             float: right;
         }
-
+        
         .category-materials {
-            background: #f6b22d url("../img/category-materials.png") no-repeat 214px 31px;
+            position: relative;
+            background-color: #f6b22d;
+        }
+
+        .category-materials::after {
+            position: absolute;
+            top: 31px;
+            right: 43px;
+            content: "";
+            width: 44px;
+            height: 65px;
+            background: url("../img/category-sprite.png") no-repeat -2px -211px;
+            z-index: 100;
 	    }
 
         .category-tools {
-	        background: #4aafde url("../img/category-tools.png") no-repeat 197px 34px;
+            position: relative;
+            background-color: #4aafde;
+        }
+
+        .category-tools::after {
+            position: absolute;
+            top: 33px;
+            right: 28px;
+            content: "";
+            width: 75px;
+            height: 61px;
+            background: url("../img/category-sprite.png") no-repeat -2px -280px;
+            z-index: 100;
         }
 
         .category-machinery {
-            background: #cc79d1 url("../img/category-machinery.png") no-repeat 190px 31px;
+            position: relative;
+            background-color: #cc79d1;
+        }
+
+        .category-machinery::after {
+            position: absolute;
+            top: 32px;
+            right: 31px;
+            content: "";
+            width: 78px;
+            height: 62px;
+            background: url("../img/category-sprite.png") no-repeat -2px -145px;
+            z-index: 100;
         }
 
         .category-discount {
-            background: #85d179 url("../img/category-discount.png") no-repeat 197px 27px;
+            position: relative;
+            background-color: #85d179;
+        }
+
+        .category-discount::after {
+            position: absolute;
+            top: 27px;
+            right: 45px;
+            content: "";
+            width: 59px;
+            height: 72px;
+            background: url("../img/category-sprite.png") no-repeat -2px -69px;
+            z-index: 100;
         }
 
         .category-delivery {
-            background: #f6b22d url("../img/category-delivery.png") no-repeat 191px 32px;
+            position: relative;
+            background-color: #f6b22d;
+        }
+
+        .category-delivery::after {
+            position: absolute;
+            top: 33px;
+            right: 31px;
+            content: "";
+            width: 78px;
+            height: 63px;
+            background: url("../img/category-sprite.png") no-repeat -2px -2px;
+            z-index: 100;
         }
 
         .new {
             position: relative;
         }
 
-        .new::after {
+        .new::before {
             position: absolute;
             content: "";
             width: 60px;
@@ -571,10 +631,10 @@ body {
             top: -1px;
             right: -1px;
             background: url("../img/flag-new.png") no-repeat;
-            z-index: 102;
+            z-index: 200;
         }
 
-.main-category .new::after {
+.main-category .new::before {
     top: 0;
     right: 0;
 }
