@@ -1738,7 +1738,7 @@ input[type='number']
 
     position: relative;
 
-    width: 141px;
+    width: 120px;
     min-height: 20px;
     margin: 0 auto;
     padding: 9px 0;
@@ -1750,7 +1750,7 @@ input[type='number']
     border-radius: 3px;
     background-color: #ee3643;
 }
-
+/*
 .item-price::before
 {
     position: absolute;
@@ -1764,21 +1764,22 @@ input[type='number']
 
     background: url('../img/btn.png') no-repeat;
 }
-
+*/
 .item-price::after
 {
     position: absolute;
-    right: -1px;
-    bottom: -1px;
-
-    width: 21px;
-    height: 21px;
+    right: -18px;
+    top: 0;
+    bottom: 0;
 
     content: '';
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-
-    background: url('../img/btn.png') no-repeat;
+    
+    width: 0; 
+    height: 0; 
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    
+    border-left: 19px solid #ee3643;
 }
 
 .old-price
@@ -1787,6 +1788,10 @@ input[type='number']
 
     color: #999;
     background: none;
+}
+
+.old-price::after {
+    display: none;
 }
 
 .flag
