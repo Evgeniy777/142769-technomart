@@ -1738,7 +1738,7 @@ input[type='number']
 
     position: relative;
 
-    width: 120px;
+    width: 121px;
     min-height: 20px;
     margin: 0 auto;
     padding: 9px 0;
@@ -1747,24 +1747,10 @@ input[type='number']
     text-transform: uppercase;
 
     color: #fff;
-    border-radius: 3px;
+    border-radius: 2px 0 0 2px;
     background-color: #ee3643;
 }
-/*
-.item-price::before
-{
-    position: absolute;
-    top: -1px;
-    right: -1px;
 
-    width: 21px;
-    height: 21px;
-
-    content: '';
-
-    background: url('../img/btn.png') no-repeat;
-}
-*/
 .item-price::after
 {
     position: absolute;
@@ -1790,7 +1776,8 @@ input[type='number']
     background: none;
 }
 
-.old-price::after {
+.old-price::after
+{
     display: none;
 }
 
