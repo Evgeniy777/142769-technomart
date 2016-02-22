@@ -270,7 +270,7 @@ body
 
 .header-bottom
 {
-    padding: 46px 0 60px 0;
+    padding: 47px 0 60px 0;
 
     background-color: #f1f5f7;
 }
@@ -285,7 +285,7 @@ body
 
     width: 248px;
     margin-left: 52px;
-    padding-bottom: 44px;
+    padding-bottom: 42px;
 
     color: #ee3643;
 }
@@ -293,8 +293,6 @@ body
 .header-contacts
 {
     float: left;
-
-    margin-top: 4px;
 }
 
 .phone
@@ -304,6 +302,7 @@ body
 
     position: relative;
 
+    margin-bottom: 5px;
     padding: 0 49px 0 72px;
 
     color: #e9292a;
@@ -339,8 +338,6 @@ body
 .user-block
 {
     float: right;
-
-    margin-top: 4px;
 }
 
 .enter,
@@ -417,7 +414,7 @@ body
 
     width: 299px;
     height: 45px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     background-color: #fff;
 }
@@ -594,7 +591,7 @@ body
 
 .main-category
 {
-    margin-bottom: 53px;
+    margin-bottom: 33px;
 }
 
 .breadcrumbs
@@ -622,6 +619,7 @@ body
     list-style: none;
 
     vertical-align: top;
+    text-transform: uppercase;
 }
 
 .breadcrumbs li::after
@@ -881,7 +879,7 @@ body
     width: 620px;
     height: 266px;
 
-    background-color: #f2f6f8;
+    background-color: #7b7b7b;
 }
 
 .slider input[type='radio']
@@ -1038,6 +1036,9 @@ body
 
 .main-btn
 {
+    font-size: 14px;
+    line-height: 18px;
+
     display: block;
 
     padding: 10px 0;
@@ -1083,14 +1084,14 @@ body
 {
     margin-bottom: 20px;
 
-    background-color: #f7f3ec;
+    background-color: #f2f6f8;
 }
 
 .content-header
 {
     padding: 25px 24px 26px 27px;
 
-    background-color: #f2f6f8;
+    background-color: #f7f3ec;
 }
 
 .content-header .content-title
@@ -1474,38 +1475,35 @@ input[type='number']
 {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 17px;
 
     display: block;
 
     margin-left: 60px;
 
-    text-decoration: underline;
+    text-decoration: none;
     text-transform: uppercase;
 
     color: rgba(0,0,0,.3);
-
-    text-decoration-style: dotted;
-    text-decoration-color: #ee3643;
+    border-bottom: 1px dotted #ee3643;
 }
 
 .sort-btn:hover
 {
     color: #000;
-
-    text-decoration-style: solid;
+    border-bottom: 1px solid #ee3643;
 }
 
 .sort-btn-active
 {
-    text-decoration: none;
-
     color: #ee3643;
+    border: none;
 }
 
 .sort-btn-active:hover
 {
     color: #ee3643;
+    border: none;
 }
 
 .sort-arrow
@@ -1754,17 +1752,17 @@ input[type='number']
 .item-price::after
 {
     position: absolute;
-    right: -18px;
     top: 0;
+    right: -18px;
     bottom: 0;
 
+    width: 0;
+    height: 0;
+
     content: '';
-    
-    width: 0; 
-    height: 0; 
+
     border-top: 19px solid transparent;
     border-bottom: 19px solid transparent;
-    
     border-left: 19px solid #ee3643;
 }
 
@@ -2070,13 +2068,11 @@ input[type='number']
 {
     float: left;
 
-    width: 400px;
+    width: 380px;
 }
 
 .tab
 {
-    position: relative;
-
     min-height: 284px;
 }
 
@@ -2090,7 +2086,7 @@ input[type='number']
 .tabs-gallery .delivery::after
 {
     position: absolute;
-    top: 23px;
+    bottom: 0;
     left: 150px;
 
     width: 468px;
@@ -2104,7 +2100,7 @@ input[type='number']
 .tabs-gallery .guarantee::after
 {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 240px;
 
     width: 389px;
@@ -2118,7 +2114,7 @@ input[type='number']
 .tabs-gallery .credit::after
 {
     position: absolute;
-    top: -2px;
+    bottom: 0;
     left: 181px;
 
     width: 465px;
@@ -2158,11 +2154,16 @@ input[type='number']
 
     margin: 0;
 
+    text-transform: uppercase;
+
     color: #32425c;
 }
 
 .tab .section-text
 {
+    position: relative;
+    z-index: 10;
+
     width: auto;
     margin: 25px 0;
 }
@@ -2323,6 +2324,8 @@ input[type='number']
 .footer-nav a:active,
 .footer-catalog a:active
 {
+    text-decoration: none;
+
     opacity: .5;
 }
 
@@ -2474,6 +2477,8 @@ input[type='number']
 
 .footer-bottom a:active
 {
+    text-decoration: none;
+
     color: #ee3643;
 }
 
@@ -2668,9 +2673,6 @@ input[type='number']
 
 .pop-up .main-btn
 {
-    font-size: 14px;
-    line-height: 18px;
-
     width: 460px;
     margin: 0 auto;
 
