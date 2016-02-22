@@ -591,6 +591,8 @@ body
 
 .main-category
 {
+    font-size: 0;
+
     margin-bottom: 33px;
 }
 
@@ -673,11 +675,13 @@ body
 
 .category
 {
-    float: left;
+    display: inline-block;
 
     width: 275px;
     margin: 0 20px 20px 0;
     padding: 19px 0 22px 25px;
+
+    vertical-align: top;
 }
 
 .category-machinery
@@ -688,8 +692,6 @@ body
 .category-discount,
 .category-delivery
 {
-    float: right;
-
     margin-right: 0;
 }
 
@@ -835,6 +837,9 @@ body
     font-weight: bold;
     line-height: 30px;
 
+    overflow: hidden;
+
+    max-width: 150px;
     margin: 0 0 14px 0;
     padding: 0;
 
@@ -878,6 +883,7 @@ body
 
     width: 620px;
     height: 266px;
+    margin: 0 20px 20px 0;
 
     background-color: #7b7b7b;
 }
@@ -911,7 +917,7 @@ body
 
     width: 6px;
     height: 6px;
-    margin: 0 3px;
+    margin: 0 5px;
     padding: 0;
 
     cursor: pointer;
