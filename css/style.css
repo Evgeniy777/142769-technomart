@@ -270,7 +270,7 @@ body
 
 .header-bottom
 {
-    padding: 47px 0 60px 0;
+    padding: 46px 0 60px 0;
 
     background-color: #f1f5f7;
 }
@@ -284,8 +284,8 @@ body
     float: left;
 
     width: 248px;
-    margin-left: 52px;
-    padding-bottom: 42px;
+    margin: 0 20px 0 52px;
+    padding-bottom: 43px;
 
     color: #ee3643;
 }
@@ -328,7 +328,7 @@ body
 .address
 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
 
     text-align: center;
 
@@ -414,7 +414,7 @@ body
 
     width: 299px;
     height: 45px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
 
     background-color: #fff;
 }
@@ -466,17 +466,26 @@ body
     height: 17px;
 
     opacity: .3;
-    background: url('../img/sprite.png') no-repeat -2px -105px;
+    background: url('../img/sprite.png') no-repeat -2px -191px;
 }
 
-.user-name-field:hover > .user-exit,
+.user-exit:hover
+{
+    opacity: 1;
+}
+
 .user-name-field:hover > .user-icon,
 .user-name-field:hover > .user-name
 {
     opacity: 1;
 }
 
-.user-name-field:active > .user-exit,
+.user-exit:active
+{
+    opacity: .3;
+    color: rgba(0,0,0,.3);
+}
+
 .user-name-field:active > .user-icon,
 .user-name-field:active > .user-name
 {
@@ -488,7 +497,7 @@ body
 .user-account
 {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 18px;
 
     text-decoration: underline;
 
@@ -1129,7 +1138,7 @@ body
 {
     float: right;
 
-    width: 243px;
+    width: 253px;
 }
 
 .range-filter
@@ -2177,7 +2186,7 @@ input[type='number']
 
 .section-information
 {
-    padding: 82px 0 86px 0;
+    padding: 81px 0 86px 0;
 }
 
 .about
@@ -2194,7 +2203,7 @@ input[type='number']
 
 .section-list
 {
-    margin-bottom: 30px;
+    margin: -4px 0 36px;
     padding: 0;
 
     list-style: none;
