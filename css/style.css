@@ -419,6 +419,11 @@ body
     background-color: #fff;
 }
 
+.user-profile
+{
+    text-decoration: none;
+}
+
 .user-icon
 {
     position: absolute;
@@ -474,8 +479,7 @@ body
     opacity: 1;
 }
 
-.user-name-field:hover > .user-icon,
-.user-name-field:hover > .user-name
+.user-profile:hover > .user-icon
 {
     opacity: 1;
 }
@@ -486,8 +490,7 @@ body
     color: rgba(0,0,0,.3);
 }
 
-.user-name-field:active > .user-icon,
-.user-name-field:active > .user-name
+.user-profile:active
 {
     opacity: .3;
     color: rgba(0,0,0,.3);
@@ -1658,7 +1661,7 @@ input[type='number']
 {
     position: absolute;
     top: 7px;
-    left: 13px;
+    left: 8px;
 
     display: block;
 
@@ -1751,12 +1754,11 @@ input[type='number']
 
     position: relative;
 
-    width: 121px;
+    width: 84px;
     min-height: 20px;
-    margin: 0 auto;
-    padding: 9px 0;
+    margin-left: 42px;
+    padding: 9px 0 9px 37px;
 
-    text-align: center;
     text-transform: uppercase;
 
     color: #fff;
@@ -1819,7 +1821,7 @@ input[type='number']
 
     display: inline-block;
 
-    margin: 32px 20px 60px 0;
+    margin: 32px 10px 60px 0;
 
     list-style-type: none;
 
@@ -1954,7 +1956,7 @@ input[type='number']
 .section-services,
 .catalog-information
 {
-    padding-top: 67px;
+    padding-top: 68px;
 
     background-color: #f2f6f8;
 }
@@ -1975,7 +1977,7 @@ input[type='number']
     font-weight: normal;
     line-height: 24px;
 
-    margin: 0 0 31px 0;
+    margin: 0 0 29px 0;
 
     text-transform: uppercase;
 
@@ -2007,7 +2009,7 @@ input[type='number']
 {
     position: relative;
 
-    margin-top: 68px;
+    margin-top: 69px;
 }
 
 .tabs input[type='radio']
@@ -2169,7 +2171,7 @@ input[type='number']
     line-height: 24px;
 
     margin: 0;
-    margin-bottom: 25px;
+    padding: 4px 0 31px;
 
     text-transform: uppercase;
 
@@ -2186,7 +2188,7 @@ input[type='number']
 
 .section-information
 {
-    padding: 81px 0 86px 0;
+    padding: 82px 0 86px 0;
 }
 
 .about
@@ -2256,7 +2258,7 @@ input[type='number']
 {
     width: 300px;
     height: 158px;
-    margin-bottom: 40px;
+    margin: 7px 0 34px;
 }
 
 .footer-top
